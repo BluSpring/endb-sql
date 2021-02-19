@@ -1,4 +1,4 @@
-import { Element, EndbAdapter } from 'endb';
+import { Element, EndbAdapter } from 'endb-main';
 import { EventEmitter } from 'events';
 import { SQLDialects } from 'sql-ts/dist/configTypes';
 import { TableWithColumns } from 'sql-ts/dist/esm/table';
