@@ -1,0 +1,32 @@
+{
+  "name": "endb-sql",
+  "version": "1.4.0",
+  "description": "SQL adapter for Endb",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "author": "BluSpring (https://github.com/BluSpring), chroventer (https://github.com/chroventer)",
+  "homepage": "https://endb.js.org",
+  "repository": "BluSpring/endb",
+  "bugs": "https://github.com/BluSpring/endb/issues",
+  "dependencies": {
+    "sql-ts": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.30",
+    "endb": "BluSpring/endb",
+    "sqlite3": "^5.0.2"
+  },
+  "keywords": [
+    "endb",
+    "key-value",
+    "cache",
+    "sql"
+  ]
+}
