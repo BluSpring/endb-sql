@@ -4,8 +4,8 @@ import { SQLDialects } from 'sql-ts/dist/configTypes';
 import { TableWithColumns } from 'sql-ts/dist/esm/table';
 import { Sql } from 'sql-ts';
 
-abstract class EndbSql<TVal> extends EventEmitter implements EndbAdapter<TVal> {
-    namespace: string;
+export default abstract class EndbSql<TVal> extends EventEmitter implements EndbAdapter<TVal> {
+    namespace: string = 'endb';
     protected readonly options: Required<EndbSql.EndbSqlOptions>;
     protected readonly db: TableWithColumns<EndbSql.SqlElement<string>>;
     protected readonly query: (sqlString: string) => Promise<any>;
@@ -133,5 +133,3 @@ declare namespace EndbSql {
         literal: any;
     }
 }
-
-export = EndbSql;
